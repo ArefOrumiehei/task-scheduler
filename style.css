@@ -1,0 +1,203 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #eee;
+  margin: 0; 
+  padding: 0;
+}
+
+#input-area {
+  background: #1a1a1a;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-shadow: 0 0 20px #ccff00aa;
+  border-bottom: 2px solid #a8e500;
+}
+
+#input-area input, #input-area button {
+  font-size: 16px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+}
+
+#input-area input {
+  flex: 1;
+  min-width: 150px;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+#input-area button {
+  background:  #a0e627;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#input-area button:hover {
+  transform: scale(1.05);
+}
+
+#tasks-list {
+  background: #1e1e1e;
+  color: #eee;
+  padding: 20px;
+  width: 600px;
+  max-width: 50%;
+  margin: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #22e5ff;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.task-item {
+  background: #2c2c2c;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task-prereq-list {
+  background: #3a3a3a;
+  margin-top: 5px;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+.prereq-item {
+  display: inline-block;
+  background: #0059bf;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-right: 6px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.prereq-item:hover {
+  background: #0091e5;
+}
+
+.prereq-remove {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #ff5252;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+  line-height: 14px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#start-btn {
+  background: #22e5ff !important;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.2s;
+}
+
+#start-btn:hover {
+  transform: scale(1.05);
+}
+
+svg {
+  background: #1e1e1e;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 0 30px #aeff00aa;
+}
+
+.node rect {
+  fill: #009688;
+  stroke: #004d40;
+  stroke-width: 2px;
+  rx: 12px;
+  ry: 12px;
+}
+
+.node text {
+  fill: #e0f7fa;
+  font-weight: 600;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.link {
+  fill: none;
+  stroke: #00bfa5;
+  stroke-width: 3px;
+}
+
+.tooltip {
+  position: absolute;
+  background: #333;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: #eee;
+  pointer-events: none;
+  font-size: 14px;
+  box-shadow: 0 0 10px #ff5722aa;
+  user-select: none;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px;
+  margin-left: 4px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.edit-btn {
+  color: #4caf50;
+}
+.edit-btn:hover {
+  background: #2e7d32aa;
+}
+
+.delete-btn {
+  color: #f44336;
+}
+.delete-btn:hover {
+  background: #c62828aa;
+}
+
+select {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+select:focus {
+  outline: none;
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px #6c63ff99;
+}

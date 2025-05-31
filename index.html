@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task Scheduler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="input-area">
+    <input type="text" id="task-name" placeholder="Task Name" />
+    <input type="number" id="task-duration" placeholder="Duration (hours)" min="1" />
+    <button id="add-task-btn">Add Task</button>
+    <button id="start-btn">Start Animation</button>
+  </div>
+
+  <div id="tasks-list">
+    <h3>Tasks and Prerequisites</h3>
+    <div id="tasks-container"></div>
+  </div>
+
+  <svg id="graph" width="1200" height="1000"></svg>
+
+  <div id="tooltip" class="tooltip" style="opacity:0;"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

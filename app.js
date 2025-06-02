@@ -253,7 +253,7 @@ function drawGraph() {
   nodeGroup.on("click", (event, d) => {
     tooltip
       .style("opacity", 1)
-      .html(`<strong>${d.name}</strong><br/>Duration: ${d.duration}h<br/>Finish Time: ${d.finishTime}<br/>Path: ${getTaskPath(d)}`)
+      .html(`<strong>${d.name}</strong><br/>Duration: ${d.duration}<br/>Finish Time: ${d.finishTime}<br/>Path: ${getTaskPath(d)}`)
       .style("left", (event.pageX + 15) + "px")
       .style("top", (event.pageY + 15) + "px");
   });
@@ -271,6 +271,6 @@ startBtn.onclick = () => {
     alert("Add some tasks first!");
     return;
   }
-  animationStarted = false; // Reset state to allow re-run
+  animationStarted = false;
   drawGraph();
 };

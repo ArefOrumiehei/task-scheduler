@@ -5,7 +5,7 @@ This project is a task scheduler implemented in three different versions. Each v
 ## Project Structure
 
 ```
-├── csarp_v/           # C# Version (Windows GUI)
+├── csharp_v/           # C# Version (Windows GUI)
 ├── js_v/             # JavaScript Version (Web-based)
 ├── py_v/             # Python Version (Graph visualization)
 ├── index.html        # Web version main page
